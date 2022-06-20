@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Mukta', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    background-color: #212121;
+    height: 50px;
+}
+
+.container {
+    max-width: 1200px;
+    width: 90%;
+    margin: auto;
+}
+
+.logo {
+    width: 40px;
+    height: 50px;
+    background-image: url("logoIcon.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 60% 100%;
+    display: block;
+    filter: invert(100%);
+    float: left;
+    padding: 0 15px;
+}
+
+header a {
+    color: white;
+}
+
+header a:hover {
+    background-color: #424242;
+}
+
+.headerButton {
+    position: relative;
+    z-index: 9;
+    background-color: #212121;
+    line-height: 50px;
+    display: block;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.logo:hover {
+    background-color: #bdbdbd;
+}
+
+ul {
+    background-color: rgb(0, 119, 79);
+    float: left;
+}
+
+li {
+    list-style: none;
+    float: left;
+}
+
+li:hover nav {
+    transform: translate(0, 0);
+}
+
+nav {
+    background-color: #313131;
+    position: absolute;
+    transform: translate(0, -100%);
+    transition: 0.3s;
+    border-radius: 0 0 5px 5px;
+    overflow: hidden;
+}
+
+nav a {
+    display: block;
+    line-height: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.phoneButton {
+    display: block;
+    float: left;
+    padding: 0 10px;
+    margin-right: 10px;
+}
+
+.phoneButton p {
+    display: block;
+    float: left;
+    line-height: 50px;
+    padding-left: 5px;
+}
+
+#callMe {
+    border: 1px solid white;
+    border-radius: 50px;
+    line-height: 30px;
+    margin-top: 10px;
+    display: block;
+    float: left;
+    box-sizing: border-box;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.phoneButton img {
+    width: 30px;
+    height: 50px;
+    filter: invert(100%);
+    display: block;
+    float: left;
+}
+
+#headerRight {
+    text-align: right;
+    float: right;
+}
+
+.slide{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.slide0{
+    background-image: url("flats/flat0.jpg");
+}
+
+.slide1{
+    background-image: url("flats/flat1.jpg");
+}
+.slide2{
+    background-image: url("flats/flat2.jpg");
+}
+.slide h2{
+    color: white;
+    font-size: 100px;
+    text-shadow: 0 0 20px black;
+    line-height: 90px;
+    padding: 40px;
+    padding-left: 0;
+}
