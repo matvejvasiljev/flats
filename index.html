@@ -10,9 +10,18 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="logoIcon.svg" type="image/svg">
 </head>
 
 <body>
+    <div class="modal">
+        <form action="">
+            <h2>Request callback</h2>
+            <input type="text" placeholder="Your name">
+            <input type="tel" placeholder="Your number">
+            <button id="callMeButton">Call me!</button>
+        </form>
+    </div>
     <header>
         <div class="container">
             <a class="logo" href=""></a>
@@ -37,7 +46,7 @@
                     <img src="phoneIcon.svg" alt="">
                     <p>8 (800) 956 8364</p>
                 </a>
-                <a id="callMe" href="">Call me</a>
+                <a id="callMe" href="#/">Call me</a>
             </div>
         </div>
     </header>
@@ -50,23 +59,23 @@
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam ad ducimus, natus odio recusandae
                         facere totam magnam atque enim reprehenderit ratione, et aliquam hic velit libero, officia
                         impedit
-                        nostrum quia?</p>
+                        nostrum quia? </p>
                     <a href="">Click it!</a>
                 </div>
             </div>
             <div class="slide slide1">
                 <div class="container">
-                    <h2>Eligendi, iste. Accusantium nulla atque, provident asperiores nemo ea inventore.</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam aliquid atque blanditiis nam,
+                    <h2>Eligendi, iste. Accusantium nulla atque, provident asperiores.</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur elit. Aperiam aliquid atque blanditiis nam,
                         error
-                        saepe doloribus quia adipisci cumque obcaecati harum eveniet odit aliquam minus vero, dolorum
+                        saepe doloribus quia cumque obcaecati harum odit aliquam minus vero, dolorum
                         maiores quasi laboriosam.</p>
                     <a href="">Click it!</a>
                 </div>
             </div>
             <div class="slide slide2">
                 <div class="container">
-                    <h2>Nemo voluptatum explicabo ullam ipsum ut sint beatae molestiae harum.</h2>
+                    <h2>Nemo voluptatum explicabo ullam ipsum ut sint beatae.</h2>
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur illum iusto fugit iure
                         recusandae
                         quisquam eum sint quia, eligendi repellat consectetur adipisci sit maiores ducimus quaerat
@@ -76,12 +85,81 @@
                 </div>
             </div>
         </div>
-
+        <div class="sliderButtons">
+            <a id="slideLeft" href="#/"></a>
+            <a id="slideRight" href="#/"></a>
+        </div>
     </div>
+
+    <div class="flats">
+        <div class="container">
+            <h2 class="sectionTitle">Flats</h2>
+            <a class="flat" href="">
+                <img src="flats/flat6.jpg" alt="">
+                <div class="flatInfo">
+                    <h3>Nekrasov Street, 21</h3>
+                    <img src="personIcon.svg" alt="">
+                    <p>3 guests</p>
+                    <img src="bedIcon.svg" alt="">
+                    <p>3 beds</p>
+                </div>
+            </a>
+            <a class="flat" href="">
+                <img src="flats/flat4.jpg" alt="">
+                <div class="flatInfo">
+                    <h3>Ryleeva Street, 25</h3>
+                    <img src="personIcon.svg" alt="">
+                    <p>3 guests</p>
+                    <img src="bedIcon.svg" alt="">
+                    <p>2 beds</p>
+                </div>
+            </a>
+            <a class="flat" href="">
+                <img src="flats/flat5.jpg" alt="">
+                <div class="flatInfo">
+                    <h3>Mayakovskogo Street, 44</h3>
+                    <img src="personIcon.svg" alt="">
+                    <p>1 guest</p>
+                    <img src="bedIcon.svg" alt="">
+                    <p>1 bed</p>
+                </div>
+            </a>
+
+
+            <a class="flat" href="">
+                <img src="flats/house0.jpg" alt="">
+                <div class="flatInfo">
+                    <h3>Baskov Lane, 23</h3>
+                    <img src="personIcon.svg" alt="">
+                    <p>3 guests</p>
+                    <img src="bedIcon.svg" alt="">
+                    <p>3 beds</p>
+                </div>
+            </a>
+            <a class="flat" href="">
+                <img src="flats/house1.jpg" alt="">
+                <div class="flatInfo">
+                    <h3>Pestelya Street, 13-15</h3>
+                    <img src="personIcon.svg" alt="">
+                    <p>3 guests</p>
+                    <img src="bedIcon.svg" alt="">
+                    <p>2 beds</p>
+                </div>
+            </a>
+            <a class="flat" href="">
+                <img src="flats/house2.jpg" alt="">
+                <div class="flatInfo">
+                    <h3>Liteyniy Avenue, 26</h3>
+                    <img src="personIcon.svg" alt="">
+                    <p>2 guests</p>
+                    <img src="bedIcon.svg" alt="">
+                    <p>2 beds</p>
+                </div>
+            </a>
+        </div>
+    </div>
+
     <script src="script.js"></script>
 </body>
 
 </html>
-
-<!-- сделать выпадающее окно на своем сайте. добавить слайдер по примеру -->
-<!-- выложить на github -->

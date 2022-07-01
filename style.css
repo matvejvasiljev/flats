@@ -4,6 +4,66 @@
     font-family: 'Mukta', sans-serif;
 }
 
+body{
+    background-color: #f5f5f5;
+}
+
+.modal {
+    background-color: rgba(0, 0, 0, 0.2);
+    position: fixed;
+    backdrop-filter: blur(10px);
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    top: 0;
+    transition: 0.3s;
+    transform: scale(0);
+}
+
+form {
+    width: 50%;
+    max-width: 450px;
+    top: 50%;
+    left: 50%;
+    position: fixed;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+    border: 2px solid rgb(180, 180, 180);
+}
+
+form h2 {
+    font-size: 50px;
+    color: rgb(180, 180, 180);
+    line-height: 50px;
+    margin-bottom: 15px;
+}
+
+form input,
+form button {
+    width: 100%;
+    box-sizing: border-box;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: 25px;
+    color: rgb(100, 100, 100);
+    border-radius: 5px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    border: 2px solid rgb(180, 180, 180);
+    background-color: white;
+}
+
+#callMeButton:hover{
+    background-color: rgb(200, 255, 200);
+}
+
+
+
+
 a {
     text-decoration: none;
 }
@@ -11,6 +71,10 @@ a {
 header {
     background-color: #212121;
     height: 50px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 8;
 }
 
 .container {
@@ -55,7 +119,6 @@ header a:hover {
 }
 
 ul {
-    background-color: rgb(0, 119, 79);
     float: left;
 }
 
@@ -123,27 +186,150 @@ nav a {
     float: right;
 }
 
-.slide{
+.sliderContainer {
+    margin-top: 50px;
+    overflow-x: hidden;
+}
+
+.slider {
+    white-space: nowrap;
+    font-size: 0;
+    transition: 0.5s;
+}
+
+.slide {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    display: inline-block;
+    white-space: normal;
+    width: 100%;
 }
 
-.slide0{
+.slide0 {
     background-image: url("flats/flat0.jpg");
 }
 
-.slide1{
+.slide1 {
     background-image: url("flats/flat1.jpg");
 }
-.slide2{
+
+.slide2 {
     background-image: url("flats/flat2.jpg");
 }
-.slide h2{
+
+.slide h2 {
     color: white;
     font-size: 100px;
     text-shadow: 0 0 20px black;
     line-height: 90px;
     padding: 40px;
     padding-left: 0;
+}
+
+.slide p {
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 5px;
+    color: white;
+    font-size: 20px;
+    width: 65%;
+    padding: 20px;
+}
+
+.slide a {
+    background-color: white;
+    color: #222222;
+    padding: 0 25px;
+    line-height: 40px;
+    border-radius: 50px;
+    font-size: 24px;
+    margin: 50px;
+    margin-left: 0;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+    display: inline-block;
+}
+
+.slide a:hover,
+.sliderButtons a:hover {
+    transform: scale(1.1);
+}
+
+.sliderButtons {
+    font-size: 0;
+    text-align: center;
+    transform: translate(0, -50%);
+}
+
+.sliderButtons a {
+    background-image: url("rightArrow.svg");
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    background-position: center;
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    padding: 0 20px;
+    margin-left: 3px;
+    margin-right: 3px;
+}
+
+#slideLeft {
+    transform: rotate(180deg);
+}
+
+#slideLeft:hover {
+    transform: rotate(180deg) scale(1.1) !important;
+}
+
+
+.sectionTitle{
+    text-align: center;
+    font-size: 45px;
+    margin-bottom: 40px;
+}
+.flat{
+    width: calc(100% / 3 - 10px);
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin: 5px;
+    margin-bottom: 30px;
+    float: left;
+    transition: 0.1s;
+    
+}
+.flat> img{
+    width: 100%;
+    height: 255px;
+    object-fit: cover;
+}
+
+.flatInfo{
+    padding: 15px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.flatInfo h3{
+    color: #222222;
+}
+
+.flatInfo img{
+    width: 20px;
+    height: 40px;
+    float: left;
+    opacity: 0.7;
+}
+.flatInfo p{
+    float: left;
+    color: #555;
+    line-height: 40px;
+    padding-left: 5px;
+    padding-right: 15px;
+}
+
+.flat:hover{
+    transform: scale(1.05);
 }
