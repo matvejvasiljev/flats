@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Квартиры</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="logoIcon.svg" type="image/svg">
+</head>
+
+<body>
+    <div class="modal">
+        <form action="">
+            <h2>Request callback</h2>
+            <input type="text" placeholder="Your name">
+            <input type="tel" placeholder="Your number">
+            <button id="callMeButton">Call me!</button>
+        </form>
+    </div>
+    <header>
+        <div class="container">
+            <input type="checkbox" class="hamburgerMenu" id="menuOpener">
+            <label for="menuOpener" class="hamburgerMenu" id="burgerMenu">
+                <span></span>
+            </label>
+            <a class="logo" href=""></a>
+            <ul id="headerLeft">
+                <li>
+                    <a class="headerButton" href="">Flats</a>
+                    <nav>
+                        <a href="">One room</a>
+                        <a href="">Two rooms</a>
+                        <a href="">Apartments</a>
+                    </nav>
+                </li>
+                <li>
+                    <a class="headerButton" href="">Feedback</a>
+                </li>
+                <li>
+                    <a class="headerButton" href="">About</a>
+                </li>
+            </ul>
+            <div id="headerRight">
+                <a class="phoneButton" href="">
+                    <img src="phoneIcon.svg" alt="">
+                    <p>8 (800) 956 8364</p>
+                </a>
+                <a id="callMe" href="#/">Call me</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <h3>Nekrasov Street, 21</h3>
+            <div class="flatGallery">
+                <img src="flatGallery/flat0.jpg" alt="">
+                <img src="flatGallery/house0.jpg" alt="">
+                <img src="flatGallery/house2.jpg" alt="">
+                <img src="flatGallery/house3.jpg" alt="">
+                <img src="flatGallery/house5.jpg" alt="">
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <a class="logo" href=""></a>
+            <ul>
+                <li>
+                    <a class="headerButton" href="">Flats</a>
+                </li>
+                <li>
+                    <a class="headerButton" href="">Feedback</a>
+                </li>
+                <li>
+                    <a class="headerButton" href="">About</a>
+                </li>
+            </ul>
+
+            <div class="footerRight">
+                <a class="locationButton" href="">
+                    <img src="locationIcon.svg" alt="">
+                    <p>Санкт-Петербург, Садовая ул., 18</p>
+                </a>
+                <div class="footerContacts">
+                    <a class="phoneButton" href="">
+                        <img src="phoneIcon.svg" alt="">
+                        <p>8 (800) 956 8364</p>
+                    </a>
+                    <div class="social">
+                        <a href="">
+                            <img src="./social/mailIcon.svg" alt="">
+                        </a>
+                        <a href="">
+                            <img src="./social/vkIcon.svg" alt="">
+                        </a>
+                        <a href="">
+                            <img src="./social/fbIcon.svg" alt="">
+                        </a>
+                        <a href="">
+                            <img src="./social/igIcon.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

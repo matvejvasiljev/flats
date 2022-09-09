@@ -4,7 +4,7 @@
     font-family: 'Mukta', sans-serif;
 }
 
-#menuOpener{
+#menuOpener {
     opacity: 0;
 }
 
@@ -378,6 +378,7 @@ nav a {
 .activePair {
     opacity: 1;
     transform: scale(1);
+    z-index: 2;
 }
 
 .comment {
@@ -615,5 +616,41 @@ footer .logo {
         padding: 10px;
         font-size: 14px;
         background-color: rgba(0, 0, 0, 0.6);
+    }
+
+    .flat {
+        width: calc(100% - 10px);
+    }
+
+    .comment {
+        width: calc(100% - 10px);
+    }
+
+    .comment p {
+        overflow: scroll;
+    }
+
+    .pairs {
+        height: 320px;
+    }
+
+    footer {
+        text-align: center;
+    }
+
+    footer ul,
+    .locationButton,
+    .phoneButton,
+    .social,
+    .locationButton img,
+    .locationButton p {
+        float: none;
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    .footerRight,
+    .footerContacts {
+        float: none;
     }
 }
