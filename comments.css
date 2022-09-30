@@ -1,0 +1,24 @@
+#title{
+    margin-top: 85px;
+    margin-bottom: 25px;
+    font-size: 33px;
+    text-align: center;
+}
+.comment{
+    width: calc(100% - 20px);
+    margin: 10px;
+}
+footer{
+    margin-top: 75px;
+}
+#main{
+    overflow: hidden;
+}
+.commentsLeft, .commentsRight{
+    float: left;
+    width: 50%;
+}
+
+.comment p{
+    height: auto;
+}
