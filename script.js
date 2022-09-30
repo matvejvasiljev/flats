@@ -1,10 +1,14 @@
 let callMe = document.getElementById("callMe")
 let callMeButton = document.getElementById("callMeButton")
+let modal = document.getElementsByClassName("modal")[0]
 
 let slideLeft = document.getElementById("slideLeft")
 let slideRight = document.getElementById("slideRight")
-let modal = document.getElementsByClassName("modal")[0]
 let slider = document.getElementsByClassName("slider")[0]
+
+let commentLeft = document.getElementById("commentLeft")
+let commentRight = document.getElementById("commentRight")
+let pairs = document.getElementsByClassName("pair")
 
 let sliderDistance = 0
 
@@ -32,6 +36,7 @@ slideRight.onclick = function () {
     slider.style.transform = `translateX(-${sliderDistance}%)`
 }
 
+
 callMe.onclick = function () {
     console.log("call me open")
     modal.style.transform = "scale(1)"
@@ -49,4 +54,37 @@ modal.onclick = function () {
 
 modal.children[0].onclick = function (event) {
     event.stopPropagation();
+}
+
+
+commentRight.onclick = function () {
+    console.log("comment right")
+    let activePair = document.getElementsByClassName("activePair")[0]
+    activePair.classList.remove("activePair")
+    let nextPair;
+    if (activePair.nextElementSibling) {
+        nextPair = activePair.nextElementSibling
+    }
+    else {
+        nextPair = pairs[0]
+    }
+    setTimeout(function () {
+        nextPair.classList.add("activePair")
+    }, 300)
+}
+
+commentLeft.onclick = function () {
+    console.log("comment left");
+    let activePair = document.getElementsByClassName("activePair")[0]
+    activePair.classList.remove("activePair")
+    let previousPair;
+    if (activePair.previousElementSibling) {
+        previousPair = activePair.previousElementSibling
+    }
+    else {
+        previousPair = pairs[pairs.length - 1]
+    }
+    setTimeout(function () {
+        previousPair.classList.add("activePair")
+    }, 300);
 }
