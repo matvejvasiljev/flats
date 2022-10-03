@@ -423,6 +423,17 @@ nav a {
     text-align: center;
     padding-bottom: 10px;
     padding-top: 10px;
+    /* нужно для того чтобы абсолютный тег выравнивался относительно данного тега(родителя) */
+    position: relative; 
+}
+
+#commentMore{
+    background: white;
+    font-size: 20px;
+    color: black;
+    line-height: 40px;
+    position: absolute;
+    right: 0;
 }
 
 footer {
@@ -652,5 +663,11 @@ footer .logo {
     .footerRight,
     .footerContacts {
         float: none;
+    }
+    #commentMore{
+        display: block;
+        position: static;
+        margin: auto;
+        margin-top: 6px;
     }
 }
