@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Квартиры</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="flat.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="logoIcon.svg" type="image/svg">
+</head>
+
+<body>
+    <div class="modal">
+        <form action="">
+            <h2>Request callback</h2>
+            <input type="text" placeholder="Your name">
+            <input type="tel" placeholder="Your number">
+            <button id="callMeButton">Call me!</button>
+        </form>
+    </div>
+    <header>
+        <div class="container">
+            <input type="checkbox" class="hamburgerMenu" id="menuOpener">
+            <label for="menuOpener" class="hamburgerMenu" id="burgerMenu">
+                <span></span>
+            </label>
+            <a class="logo" href="index.html"></a>
+            <ul id="headerLeft">
+                <li>
+                    <a class="headerButton" href="">Flats</a>
+                    <nav>
+                        <a href="">One room</a>
+                        <a href="">Two rooms</a>
+                        <a href="">Apartments</a>
+                    </nav>
+                </li>
+                <li>
+                    <a class="headerButton" href="">Feedback</a>
+                </li>
+                <li>
+                    <a class="headerButton" href="">About</a>
+                </li>
+            </ul>
+            <div id="headerRight">
+                <a class="phoneButton" href="">
+                    <img src="phoneIcon.svg" alt="">
+                    <p>8 (800) 956 8364</p>
+                </a>
+                <a id="callMe" href="#/">Call me</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <h3>Baskov Lane, 23</h3>
+            <div class="flatGallery">
+                <img id="flatImage0" src="flats/flat6.jpg" alt="">
+                <img id="flatImage1" src="flats/house7.jpg" alt="">
+                <img id="flatImage2" src="flats/house1.jpg" alt="">
+                <img id="flatImage3" src="flats/house2.jpg" alt="">
+                <img id="flatImage4" src="flats/house8.jpg" alt="">
+            </div>
+            <div class="flatInfo">
+                <h2 class="price">$79 / night</h2>
+                <a href="">Check availability</a>
+                <p class="info">Comfortable and convenient apartment that can be enjoyed as a SOHO or short term/long
+                    term vacation stay. 8 minutes by direct train from the Airport and 3 minutes on foot from the
+                    Station. If you would like early check-in, please contact us in advanced. Seven-Eleven (1
+                    minute walk), supermarkets (3 minute walk), and many other restaurants Burger
+                    King are in close walking distance. Convenient keyless check-in (smart lock system) for hassle free
+                    checkin process. Delivery boxes and mailboxes are available. Garbage can be taken out 24 hours a
+                    day. NETFLIX and Disney+ free viewing. There is a clothes dryer. Fantastic access to the Airport.
+                </p>
+                <ul>
+                    <li>
+                        <img src="personIcon.svg" alt="">
+                        <p>3 guests</p>
+                        <img src="bedIcon.svg" alt="">
+                        <p>3 beds</p>
+                    </li>
+                    <li>
+                        <img src="markIcon.svg" alt="">
+                        <p>luggage dropoff allowed, paid parking off-premises</p>
+                    </li>
+                    <li>
+                        <img src="markIcon.svg" alt="">
+                        <p>Wifi, hair dryer, iron, microwave, refrigerator</p>
+                    </li>
+                </ul>
+            </div>
+            <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5644677538885!2d30.355958916512!3d59.939368881876426!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x469631a1fc87e7bd%3A0xacceff0d1cea69db!2sBaskov%20Pereulok%2C%2023%2C%20Sankt-Peterburg%2C%20191014!5e0!3m2!1sen!2sru!4v1665142766873!5m2!1sen!2sru" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <a class="logo" href=""></a>
+            <ul>
+                <li>
+                    <a class="headerButton" href="">Flats</a>
+                </li>
+                <li>
+                    <a class="headerButton" href="">Feedback</a>
+                </li>
+                <li>
+                    <a class="headerButton" href="">About</a>
+                </li>
+            </ul>
+
+            <div class="footerRight">
+                <a class="locationButton" href="">
+                    <img src="locationIcon.svg" alt="">
+                    <p>Санкт-Петербург, Садовая ул., 18</p>
+                </a>
+                <div class="footerContacts">
+                    <a class="phoneButton" href="">
+                        <img src="phoneIcon.svg" alt="">
+                        <p>8 (800) 956 8364</p>
+                    </a>
+                    <div class="social">
+                        <a href="">
+                            <img src="./social/mailIcon.svg" alt="">
+                        </a>
+                        <a href="">
+                            <img src="./social/vkIcon.svg" alt="">
+                        </a>
+                        <a href="">
+                            <img src="./social/fbIcon.svg" alt="">
+                        </a>
+                        <a href="">
+                            <img src="./social/igIcon.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+    <script src="flat.js"></script>
+</body>
+
+</html>
