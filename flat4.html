@@ -7,11 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Квартиры</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="flat.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@400;700&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="logoIcon.svg" type="image/svg">
-    <link rel="stylesheet" href="about.css">
 </head>
 
 <body>
@@ -40,7 +40,7 @@
                     </nav>
                 </li>
                 <li>
-                    <a class="headerButton" href="comments.html" target="_blank">Feedback</a>
+                    <a class="headerButton" href="">Feedback</a>
                 </li>
                 <li>
                     <a class="headerButton" href="">About</a>
@@ -56,45 +56,52 @@
         </div>
     </header>
 
-    <div class="aboutInfo">
+    <main>
         <div class="container">
-            <h2>About our company</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <b>Molestias, non molestiae!</b> Tempore
-                mollitia
-                soluta
-                doloribus deserunt praesentium velit, commodi est, asperiores aut porro exercitationem necessitatibus
-                repellendus! Earum vero voluptatibus quos?
-                <br><br>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit tempora voluptatibus doloremque nemo
-                dolore obcaecati commodi porro numquam dicta molestias illo eum ex quis ipsam culpa accusantium
-                possimus,
-                <b>voluptatum eveniet?</b>
-            </p>
-        </div>
-    </div>
-
-    <div class="aboutContacts">
-        <div class="container">
-            <h2>Contacts</h2>
-            <section>
-                <h3>We work 9am - 9pm, no weekends</h3>
+            <h3>Pestelya Street, 13-15</h3>
+            <div class="flatGallery">
+                <img id="flatImage0" src="flats/flat6.jpg" alt="">
+                <img id="flatImage1" src="flats/house7.jpg" alt="">
+                <img id="flatImage2" src="flats/house1.jpg" alt="">
+                <img id="flatImage3" src="flats/house2.jpg" alt="">
+                <img id="flatImage4" src="flats/house8.jpg" alt="">
+            </div>
+            <div class="flatInfo">
+                <h2 class="price">$160 / night</h2>
+                <a href="">Check availability</a>
+                <p class="info">Quiet room available in an artist's apartment. The room is fully furnished, the bed is
+                    very comfy. I provide fresh towels and sheets. Interior and mattresses are being exchanged
+                    frequently. You will get to experience staying in a new, exciting neighborhood
+                    with artists and young families. The Subway is on the same block! This is
+                    the perfect place for a city vacation or business trip...
+                    <br><br>
+                    You are welcome to use the kitchen, all amenities included. I have a microwave and a electric water
+                    kettle for you. However, the use of the stove is not permitted. No actual meal cooking please. I
+                    have Free High Speed Internet / WiFi for you..
+                </p>
                 <ul>
-                    <li><b>Address</b>: </li>
-                    <li><b>Phone</b>: 8 (905) 255-00-10</li>
-                    <li><b>E-mail</b>: office@world-rent-plus.ru</li>
                     <li>
-                        <a href=""><img src="./social/vkIcon.svg" alt=""></a>
-                        <a href=""><img src="./social/fbIcon.svg" alt=""></a>
-                        <a href=""><img src="./social/igIcon.svg" alt=""></a>
+                        <img src="personIcon.svg" alt="">
+                        <p>3 guests</p>
+                        <img src="bedIcon.svg" alt="">
+                        <p>2 beds</p>
+                    </li>
+                    <li>
+                        <img src="markIcon.svg" alt="">
+                        <p>luggage dropoff allowed, paid parking off-premises</p>
+                    </li>
+                    <li>
+                        <img src="markIcon.svg" alt="">
+                        <p>Wifi, hair dryer, iron, microwave, refrigerator</p>
                     </li>
                 </ul>
-            </section>
+            </div>
             <iframe id="map"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d795.1519524869726!2d30.308334282729845!3d59.93159652170484!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696311b9ba4f723%3A0xe4b5f32590fca9b5!2sembankment%20Riv%20Moyka%2C%20Sankt-Peterburg!5e0!3m2!1sen!2sru!4v1665404827354!5m2!1sen!2sru"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.3922279353853!2d30.34055781647337!3d59.94222668187755!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310b20f8aead%3A0x29f3bd6c98d942b9!2sUlitsa%20Pestelya%2C%2013-15%2C%20Sankt-Peterburg%2C%20191028!5e0!3m2!1sen!2sru!4v1665404061039!5m2!1sen!2sru"
                 width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
-    </div>
+    </main>
 
     <footer>
         <div class="container">
@@ -140,8 +147,7 @@
         </div>
     </footer>
     <script src="script.js"></script>
+    <script src="flat.js"></script>
 </body>
 
 </html>
-
-<!-- ifconfig  - узнать ip адрес (в терминале) -->
