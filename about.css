@@ -33,7 +33,12 @@ section li:last-child {
     border: none;
 }
 
+#map{
+    width: 50%;
+}
+
 .aboutInfo p {
+    box-sizing: border-box;
     width: 75%;
     margin: auto;
     color: #555;
@@ -63,13 +68,86 @@ section a img {
 }
 
 
+.container{
+    overflow: hidden;
+}
+.ourTeam{
+    margin-bottom: 50px;
+}
+.person {
+    overflow: hidden;
+    padding: 0 20px;
+    font-size: 0;
+    width: calc(100% / 3);
+    float: left;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
 .person>img {
     width: 100px;
     height: 100px;
     border-radius: 50px;
     object-fit: cover;
+    vertical-align: middle;
 }
 
 .personInfo img {
     width: 20px;
+    float: left;
+}
+
+.person h4{
+    font-size: 22px;
+    line-height: 25px;
+}
+
+.personInfo {
+    display: inline-block;
+    width: calc(100% - 100px);
+    vertical-align: middle;
+    padding-left: 10px;
+    box-sizing: border-box;
+    color: #444;
+}
+
+.personInfo p{
+    font-size: 15px;
+    line-height: 20px;
+}
+
+.mail p,
+.phone p {
+    float: left;
+    width: calc(100% - 20px);
+    padding-left: 5px;
+    box-sizing: border-box;
+}
+
+.phone{
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+.mail, .phone{
+    overflow: hidden;
+}
+
+@media (max-width: 600px){
+    h2{
+    line-height: 25px;
+    }
+    .aboutInfo p{
+        line-height: 22px;
+        padding-left: 10px;
+        padding-right: 10px;
+        width: 100%;
+    }
+    section{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    #map{
+        margin-bottom: 20px;
+        width: 100%;
+    }
 }
