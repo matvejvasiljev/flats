@@ -33,7 +33,7 @@ section li:last-child {
     border: none;
 }
 
-#map{
+#map {
     width: 50%;
 }
 
@@ -68,12 +68,14 @@ section a img {
 }
 
 
-.container{
+.container {
     overflow: hidden;
 }
-.ourTeam{
+
+.ourTeam {
     margin-bottom: 50px;
 }
+
 .person {
     overflow: hidden;
     padding: 0 20px;
@@ -97,7 +99,7 @@ section a img {
     float: left;
 }
 
-.person h4{
+.person h4 {
     font-size: 22px;
     line-height: 25px;
 }
@@ -111,7 +113,7 @@ section a img {
     color: #444;
 }
 
-.personInfo p{
+.personInfo p {
     font-size: 15px;
     line-height: 20px;
 }
@@ -124,30 +126,40 @@ section a img {
     box-sizing: border-box;
 }
 
-.phone{
+.phone {
     margin-top: 10px;
     margin-bottom: 5px;
 }
-.mail, .phone{
+
+.mail,
+.phone {
     overflow: hidden;
 }
 
-@media (max-width: 600px){
-    h2{
-    line-height: 25px;
+@media (max-width: 600px) {
+    h2 {
+        line-height: 25px;
     }
-    .aboutInfo p{
+
+    .aboutInfo p {
         line-height: 22px;
         padding-left: 10px;
         padding-right: 10px;
         width: 100%;
     }
-    section{
+
+    section {
         width: 100%;
         margin-bottom: 10px;
     }
-    #map{
+
+    #map {
         margin-bottom: 20px;
         width: 100%;
+    }
+
+    .person {
+        width: 100%;
+        padding: 0;
     }
 }

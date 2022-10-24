@@ -1,7 +1,3 @@
-let callMe = document.getElementById("callMe")
-let callMeButton = document.getElementById("callMeButton")
-let modal = document.getElementsByClassName("modal")[0]
-
 let slideLeft = document.getElementById("slideLeft")
 let slideRight = document.getElementById("slideRight")
 let slider = document.getElementsByClassName("slider")[0]
@@ -34,26 +30,6 @@ slideRight.onclick = function () {
         sliderDistance = 0;
     }
     slider.style.transform = `translateX(-${sliderDistance}%)`
-}
-
-
-callMe.onclick = function () {
-    console.log("call me open")
-    modal.style.transform = "scale(1)"
-}
-
-callMeButton.onclick = function () {
-    console.log("call me confirm")
-    modal.style.transform = "scale(0)"
-}
-
-modal.onclick = function () {
-    console.log("call me close")
-    modal.style.transform = "scale(0)"
-}
-
-modal.children[0].onclick = function (event) {
-    event.stopPropagation();
 }
 
 
